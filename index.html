@@ -200,7 +200,7 @@
 				]
 			});
 			Reveal.addEventListener( 'slidechanged', function( event ) {
-				if (event.indexh == 0) {
+				if (event.indexh == 0 && event.indexv == 0) {
     				setBackground(document.body,"img/Skolen.png");
     			} else {
     				document.body.style.background = "";
@@ -210,7 +210,7 @@
 			Reveal.addEventListener( 'ready', function( event ) {
 				document.body.setAttribute("heigth",window.innerHeight);
 				document.body.setAttribute("width",window.innerWidth);
-			   if (event.indexh == 0) {
+			   if (event.indexh == 0 && event.indexv == 0) {
     				setBackground(document.body,"img/Skolen.png");
     			} else {
     				document.body.style.background = "";	
