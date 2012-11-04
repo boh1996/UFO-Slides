@@ -35,15 +35,14 @@
 
 			<div class="slides">
 				<section>
-					<section>
-						<h2>Slip dem løs …!</h2>
-						<address style="width:440px;" class="text-left" id="address">
-							<strong><a href="http://gvs.kk.dk">Grøndalsvængets skole</a>,</strong><br>
-							<span>København</span><br>
-						</address>
-						<a style="margin-top:300px;" class="text-left" href="http://uddannelsesforum2012.emu.dk/">Uddannelsesforum 2012</a>
-						
-					</section>
+						<section data-state="first">
+							<h2 style="color:white;">Slip dem løs …!</h2>
+							<address style="width:440px;" class="text-left" id="address">
+								<strong style="color:white;"><a href="http://gvs.kk.dk">Grøndalsvængets skole</a>,</strong><br>
+								<span style="color:white;">København</span><br>
+							</address>
+							<a style="margin-top:300px;" style="color:white;" class="text-left" href="http://uddannelsesforum2012.emu.dk/">Uddannelsesforum 2012</a>
+						</section>
 					<section>
 						<h3 class="text-left">Forhenværende elever :</h3>
 						<ul class="center clear">
@@ -180,7 +179,6 @@
 		<script src="js/reveal.min.js"></script>
 
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -201,6 +199,27 @@
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				if (event.indexh == 0) {
+    				setBackground(document.body,"img/Skolen.png");
+    			} else {
+    				document.body.style.background = "";
+    			}
+			} );
+
+			Reveal.addEventListener( 'ready', function( event ) {
+				document.body.setAttribute("heigth",window.innerHeight);
+				document.body.setAttribute("width",window.innerWidth);
+			   if (event.indexh == 0) {
+    				setBackground(document.body,"img/Skolen.png");
+    			} else {
+    				document.body.style.background = "";	
+    			}
+			} );
+
+			function setBackground (element, image) {
+				element.style.background = "url('"+image+"')";
+			}
 		</script>
 
 	</body>

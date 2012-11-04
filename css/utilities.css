@@ -43,6 +43,10 @@
 	}
 }
 
+.text-white {
+	color: #FFF;
+}
+
 #address {
 	margin-left:20%;
 }
@@ -51,4 +55,16 @@
 	#address {
 		margin-left:26%;
 	}
+}
+
+img.resize{
+    width:540px; /* you can use % */
+    height: auto;
+}
+
+body {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
