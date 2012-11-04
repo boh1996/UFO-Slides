@@ -150,7 +150,7 @@
 					</section>
 				</section>
 				<section>
-					<a href="http://github.com/illution"><img src="img/yes-we-code.jpg" heigth="256" width="256" style="float:right"/></a>
+					<a href="http://github.com/illution"><img src="img/yes-we-code.jpg" id="yes-we-code" heigth="256" width="256" style="float:right;-webkit-transition: 20s;"/></a>
 
 					<div style="float:left;text-align:left">
 						<div style="margin-top: 12px;font-size: 54px;float: left;">Grøndalsvængets skole</div>
@@ -179,6 +179,7 @@
 			</div>
 		</div>
 
+		<script src="js/jquery.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
@@ -208,6 +209,9 @@
     				setBackground(document.body,"img/Skolen.png");
     			} else {
     				document.body.style.background = "";
+    			}
+    			if (event.indexh == 3 && event.indexv == 0) {
+    				$("#yes-we-code")[0].style.webkitTransform = "rotateX(1800deg)";
     			}
 			} );
 
