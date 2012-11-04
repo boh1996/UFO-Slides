@@ -63,6 +63,7 @@ img.resize{
 }
 
 body {
+	background: no-repeat;
 	width: 100%;
 	position: absolute;
 	top: 0;
