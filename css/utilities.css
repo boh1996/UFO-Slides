@@ -33,6 +33,10 @@
 	float: left;
 }
 
+.push-right {
+	float: right;
+}
+
 .spacing-left {
 	margin-left: 400px;
 }
