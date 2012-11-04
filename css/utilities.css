@@ -1,0 +1,54 @@
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	margin:0px;
+	clear: both;
+}
+
+.center {
+	float:both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.circle {
+	list-style-type :disc;
+}
+
+.push-left {
+	float: left;
+}
+
+.spacing-left {
+	margin-left: 400px;
+}
+
+@media (max-width: 767px) {
+  	#address {
+		margin-left:25%;
+	}
+}
+
+#address {
+	margin-left:20%;
+}
+
+@media (min-width: 980px) {
+	#address {
+		margin-left:26%;
+	}
+}
